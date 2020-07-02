@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageForUser.master.cs" Inherits="MyWeb.MasterPageForUser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Common.css" rel="stylesheet" />
+    <link href="CSS/member.css" rel="stylesheet" />
+    <script type="text/javascript" src="JS/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.validity.min.js"></script>
+    <style type="text/css">
+        .topnav .top-r {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="float: right;">
+            <div>
+                <div>
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>&nbsp
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">登陆</asp:HyperLink>&nbsp
+                     |
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Register.aspx">注册</asp:HyperLink>
+                    |
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Login.aspx">退出</asp:HyperLink>
+                </div>
+            </div>
+        </div>
+        <%--</div>--%>
+        <div class="clr" style="width:960px">
+            <table width="990px" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="200" height="90" align="center" valign="bottom" style="padding-bottom: 3px">
+                        <a href="Index.aspx" style="text-decoration: none;">
+                            <div style="width: 450px; height: 80px; text-align: center; line-height: 80px; font-size: 40px;">在线投票系统</div>
+
+                        </a>
+                    </td>
+                    <td width="50" valign="bottom" style="padding-left: 5px; padding-bottom: 16px;"></td>
+                    <%--<td>
+                        <div class="input-box">
+                            <input name="k" id="k" runat="server" style="width: 300px;" class="inp-metro" type="text" x-webkit-grammar="builtin:translate"
+                                x-webkit-speech="" autocomplete="off" maxlength="26" />
+                            <asp:Button CssClass="btn-query" ID="serachBtn" runat="server" Text="" />
+                        </div>
+                    </td>--%>
+                </tr>
+            </table>
+        </div>
+        <div class="nav">
+            <div class="nav-box w990">
+                <ul>
+                    <li class="home"><a rel="nofollow" href="UserVote.aspx">投票首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-main clearfix">
+            <div class="main">
+                <div class="box user clearfix mb10">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="w990 clr">
+                <div class="ft">
+                    <div>
+                        本站支持以下浏览器：IE6.0、IE7.0、IE8.0、Firefox、Opera浏览器、Chrome浏览器 浏览器问题汇总
+                    </div>
+                    <%--<div>
+                        <a class="admin" href="AdminLogin.aspx">管理员登录</a>
+                    </div>--%>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

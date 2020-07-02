@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30B0CC07-7737-4640-8035-72499E79A5A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWeb</RootNamespace>
+    <AssemblyName>MyWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AddVoteDetailInfo.aspx" />
+    <Content Include="AddVoteInfo.aspx" />
+    <Content Include="AdminIndex.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="CSS\Common.css" />
+    <Content Include="CSS\LoginandRegister.css" />
+    <Content Include="CSS\member.css" />
+    <Content Include="CSS\onlineBase.css" />
+    <Content Include="CSS\onlineEsfList.css" />
+    <Content Include="EditVoteDetailInfo.aspx" />
+    <Content Include="EditVoteInfo.aspx" />
+    <Content Include="Images\addcart.gif" />
+    <Content Include="Images\addfav.gif" />
+    <Content Include="Images\affiche_ar.gif" />
+    <Content Include="Images\avatar-60.png" />
+    <Content Include="Images\barbg.png" />
+    <Content Include="Images\btn_metro.png" />
+    <Content Include="Images\buy.gif" />
+    <Content Include="Images\danjie.png" />
+    <Content Include="Images\decrease.gif" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\dotline.gif" />
+    <Content Include="Images\duijie.png" />
+    <Content Include="Images\elbow-end-minus-nl.gif" />
+    <Content Include="Images\elbow-end-plus-nl.gif" />
+    <Content Include="Images\fuhao1.png" />
+    <Content Include="Images\fuhao2.png" />
+    <Content Include="Images\fuhao4.png" />
+    <Content Include="Images\helpful_bg.gif" />
+    <Content Include="Images\icons\affiche_ar.gif" />
+    <Content Include="Images\icons\convert_ar.gif" />
+    <Content Include="Images\icons\filter_current_close.gif" />
+    <Content Include="Images\icons\filter_current_close_hover.gif" />
+    <Content Include="Images\icons\hot.png" />
+    <Content Include="Images\icons\hot2.gif" />
+    <Content Include="Images\icons\icon_star_1.gif" />
+    <Content Include="Images\icons\icon_star_2.gif" />
+    <Content Include="Images\icons\jian.gif" />
+    <Content Include="Images\icons\jian2.gif" />
+    <Content Include="Images\icons\new.png" />
+    <Content Include="Images\icons\new2.gif" />
+    <Content Include="Images\img05.gif" />
+    <Content Include="Images\increase.gif" />
+    <Content Include="Images\input_bg.gif" />
+    <Content Include="Images\login\btn.jpg" />
+    <Content Include="Images\login\btn_hover.jpg" />
+    <Content Include="Images\login\login.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\member\button2.gif" />
+    <Content Include="Images\member\button6.gif" />
+    <Content Include="Images\member\button7.gif" />
+    <Content Include="Images\member\collapsed.gif" />
+    <Content Include="Images\member\expand.gif" />
+    <Content Include="Images\member\icon_member.gif" />
+    <Content Include="Images\member\leftmenu_topbg.gif" />
+    <Content Include="Images\member\sendmail.gif" />
+    <Content Include="Images\member\sprite.gif" />
+    <Content Include="Images\none.gif" />
+    <Content Include="Images\nophoto.gif" />
+    <Content Include="Images\nv.png" />
+    <Content Include="Images\pj_box_arrow.gif" />
+    <Content Include="Images\privatetop.png" />
+    <Content Include="Images\privatetop2.png" />
+    <Content Include="Images\reply_arrow.gif" />
+    <Content Include="Images\serach-bg.png" />
+    <Content Include="Images\serach-input.gif" />
+    <Content Include="Images\sprite.gif" />
+    <Content Include="Images\submit2.gif" />
+    <Content Include="Images\tab_nav.gif" />
+    <Content Include="Images\tab_selected.png" />
+    <Content Include="Images\topbar.gif" />
+    <Content Include="Images\Top\bj.png" />
+    <Content Include="Images\Top\bj1.png" />
+    <Content Include="Images\Top\top1.png" />
+    <Content Include="Images\UserGroup\VIP会员.png" />
+    <Content Include="Images\UserGroup\VIP白金.png" />
+    <Content Include="Images\UserGroup\VIP金牌.png" />
+    <Content Include="Images\UserGroup\VIP银牌.png" />
+    <Content Include="Images\ziti1.png" />
+    <Content Include="Images\ziti2.png" />
+    <Content Include="Images\zTreeImg\diy\1_close.png" />
+    <Content Include="Images\zTreeImg\diy\1_open.png" />
+    <Content Include="Images\zTreeImg\diy\2.png" />
+    <Content Include="Images\zTreeImg\diy\3.png" />
+    <Content Include="Images\zTreeImg\diy\4.png" />
+    <Content Include="Images\zTreeImg\diy\5.png" />
+    <Content Include="Images\zTreeImg\diy\6.png" />
+    <Content Include="Images\zTreeImg\diy\7.png" />
+    <Content Include="Images\zTreeImg\diy\8.png" />
+    <Content Include="Images\zTreeImg\diy\9.png" />
+    <Content Include="Images\zTreeImg\line_conn.gif" />
+    <Content Include="Images\zTreeImg\loading.gif" />
+    <Content Include="Images\zTreeImg\zTreeStandard.gif" />
+    <Content Include="Images\zTreeImg\zTreeStandard.png" />
+    <Content Include="INC\VerifyCode.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="JS\AdminRegister.js" />
+    <Content Include="JS\ImgTool.js" />
+    <Content Include="JS\jquery-1.7.1.min.js" />
+    <Content Include="JS\jquery.Scrollbar.min.js" />
+    <Content Include="JS\jquery.validity.min.js" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\PagingForOnline.js" />
+    <Content Include="JS\Register.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MSofts\ChromeCore_1277_3.0.1.6.exe" />
+    <Content Include="Register.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UserVote.aspx" />
+    <Content Include="VoteDetailInfoManage.aspx" />
+    <Content Include="VoteInfoManage.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVoteDetailInfo.aspx.cs">
+      <DependentUpon>AddVoteDetailInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVoteDetailInfo.aspx.designer.cs">
+      <DependentUpon>AddVoteDetailInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVoteInfo.aspx.cs">
+      <DependentUpon>AddVoteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVoteInfo.aspx.designer.cs">
+      <DependentUpon>AddVoteInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminIndex.aspx.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminIndex.aspx.designer.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBUtility\DBHelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditVoteDetailInfo.aspx.cs">
+      <DependentUpon>EditVoteDetailInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditVoteDetailInfo.aspx.designer.cs">
+      <DependentUpon>EditVoteDetailInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditVoteInfo.aspx.cs">
+      <DependentUpon>EditVoteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditVoteInfo.aspx.designer.cs">
+      <DependentUpon>EditVoteInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="INC\VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="INC\VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageForAdmin.Master.cs">
+      <DependentUpon>MasterPageForAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageForAdmin.Master.designer.cs">
+      <DependentUpon>MasterPageForAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageForUser.Master.cs">
+      <DependentUpon>MasterPageForUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageForUser.Master.designer.cs">
+      <DependentUpon>MasterPageForUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserVote.aspx.cs">
+      <DependentUpon>UserVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserVote.aspx.designer.cs">
+      <DependentUpon>UserVote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteDetailInfoManage.aspx.cs">
+      <DependentUpon>VoteDetailInfoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteDetailInfoManage.aspx.designer.cs">
+      <DependentUpon>VoteDetailInfoManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VoteInfoManage.aspx.cs">
+      <DependentUpon>VoteInfoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoteInfoManage.aspx.designer.cs">
+      <DependentUpon>VoteInfoManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUtility\WebHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\Commodity\" />
+    <Folder Include="Pictures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zTreeImg\diy\vssver2.scc" />
+    <None Include="Images\zTreeImg\vssver2.scc" />
+    <Content Include="MasterPageForUser.Master" />
+    <Content Include="MasterPageForAdmin.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
